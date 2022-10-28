@@ -16,14 +16,23 @@ fetch('https://api.thedogapi.com/v1/images/search').then(response => response.js
     )
 .catch(err => console.error(err));
 }
-
-
-
-  $('input.[title="information"]').click(spotifybtn)
   
-  function spotifybtn(){
-    console.log("The button click works")
-  }
+function startNewMusic(){
+    document.getElementById("newMusic").classList.remove("hidden")
+    document.getElementById("soundo").classList.add("raveParty")
+    window.scrollBy(0, 500);
+
+    setTimeout(() => {
+      endNewMusic();
+    }, 8000);
+}
+
+function endNewMusic(){
+  document.getElementById("newMusic").classList.add("hidden")
+  document.getElementById("soundo").classList.remove("raveParty")
+}
+
+
 
 //NEXT
 
