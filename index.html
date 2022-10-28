@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>DOPAMINE GENERATOR</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" type="text/css" href="/harrystylesdopaminegenerator.css">
+</head>
+
+<body onload="getDoggo()">
+    <div id="header">
+    <h1>DOPAMINE GENERATOR</h1>
+    </div>
+
+    <div class="navbar">
+        <button id="btn">New Quote</button>
+        <button id="btn" onclick="getDoggo()">New Doggo</button>
+        <button id="btn" onclick="setup()">New Gif</button>
+        <a href="#home">New Music</a>
+        <button id="btn" onClick="window.location.reload();">Vibe Change</button>
+    </div>
+
+    <div class="cards">
+
+        <div class="card" id="advice">
+            <!-- GET QUOTE -->
+            <div class="wrapper">
+                <div class="container">
+                    <p id="quote">Lorem ipsum</p>
+                    <h3 id="author">Lorem, ipsum.</h3>
+                    <button id="btn">New Quote</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card" id="doggo">
+            <div class="wrapper">
+                <div class="container">
+                    <button id="btn" onclick="getDoggo()">New Doggo</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card" id="giffo">
+            <button id="btn" onclick="setup()">New GIF</button>
+                    <div id="gifContainer">Gif Loading</div>
+                    
+        </div>
+
+
+        <div class="card" id="soundo">
+            <iframe style="border-radius:4px"
+                src="https://open.spotify.com/embed/playlist/0qsXmYddIKdeaAtqhxD3NF?utm_source=generator&theme=0"
+                width="100%" height="380" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+        </div>
+    </div>
+
+
+    <!-- GIF HTML============================================================================================================================================================================== -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/addons/p5.sound.min.js"></script>
+    <!-- END HTML============================================================================================================================================================================== -->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/addons/p5.sound.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <!-- <script src="main.js"></script> -->
+
+</body>
+
+</html>
