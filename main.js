@@ -16,6 +16,15 @@ fetch('https://api.thedogapi.com/v1/images/search').then(response => response.js
     )
 .catch(err => console.error(err));
 }
+
+
+
+  $('input.[title="information"]').click(spotifybtn)
+  
+  function spotifybtn(){
+    console.log("The button click works")
+  }
+
 //NEXT
 
 //can also use .innerHTML
