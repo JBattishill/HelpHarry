@@ -74,18 +74,21 @@ function endNewMusic(){
 
 // }
 
-
+function loading(){
+  getQuoto();
+  getDoggo();
+}
 
 
 // QUOTE JS ========================================================================================================================================
-
-let quote = document.getElementById("quote");
-let author = document.getElementById("author");
-let btn = document.getElementById("btn");
+function getQuoto(){
+var quote = document.getElementById("quote");
+var author = document.getElementById("author");
+var btn = document.getElementById("btn");
 
 const url = "https://api.quotable.io/random";
 
-let getQuote = () => {
+// let getQuote = () => {
   fetch(url)
     .then((data) => data.json())
     .then((item) => {
@@ -93,10 +96,9 @@ let getQuote = () => {
       author.innerText = item.author;
     });
 };
-
-window.addEventListener("load", getQuote);
-btn.addEventListener("click", getQuote);
-
+// window.addEventListener("load", getQuote);
+// btn.addEventListener("click", getQuote);
+// }
 
 
 

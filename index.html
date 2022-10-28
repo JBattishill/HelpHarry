@@ -14,13 +14,13 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
-<body onload="getDoggo()">
+<body onload="loading()">
     <div id="header">
     <h1>DOPAMINE GENERATOR</h1>
     </div>
 
     <div class="navbar">
-        <button id="btn">New Quote</button>
+        <button id="btn" onclick="getQuoto()">New Quote</button>
         <button id="btn" onclick="getDoggo()">New Doggo</button>
         <button id="btn" onclick="setup()">New Gif</button>
         <a href="#home" onclick="startNewMusic()">New Music</a>
@@ -35,7 +35,7 @@
                 <div class="container">
                     <p id="quote">Lorem ipsum</p>
                     <h3 id="author">Lorem, ipsum.</h3>
-                    <button id="btn">New Quote</button>
+                    <button id="btn" onclick="getQuoto()">New Quote</button>
                 </div>
             </div>
         </div>
