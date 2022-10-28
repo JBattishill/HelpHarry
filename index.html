@@ -14,24 +14,28 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
-<body onload="loading()">
-    <div id="header">
-    <h1>DOPAMINE GENERATOR</h1>
+<body id="bodyo" onload="loading()" class="">
+    <div id="heado" class="headerWrapper">
+        <div id="header">
+          <h1>DOPAMINE GENERATOR</h1>
+        </div>
     </div>
 
-    <div class="navbar">
+    <div id="navo" class="navbar">
         <button id="btn" onclick="getQuoto()">New Quote</button>
         <button id="btn" onclick="getDoggo()">New Doggo</button>
         <button id="btn" onclick="setup()">New Gif</button>
         <a href="#home" onclick="startNewMusic()">New Music</a>
-        <button id="btn" onClick="window.location.reload();">Vibe Change</button>
+        <a href="#home" onclick=" startRaveParty()">Rave Party</a>
+        <button id="btn" onClick="window.location.reload()">Vibe Change</button>
+       
     </div>
 
     <div class="cards">
 
-        <div class="card" id="advice">
+        <div id="quoto" class="card">
             <!-- GET QUOTE -->
-            <div class="wrapper">
+            <div id="" class="wrapper">
                 <div class="container">
                     <p id="quote">Lorem ipsum</p>
                     <h3 id="author">Lorem, ipsum.</h3>

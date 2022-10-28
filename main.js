@@ -17,9 +17,36 @@ fetch('https://api.thedogapi.com/v1/images/search').then(response => response.js
 .catch(err => console.error(err));
 }
   
+
+function startRaveParty(){
+  document.getElementById("soundo").classList.add("raveParty");
+  document.getElementById("quoto").classList.add("raveParty");
+  document.getElementById("giffo").classList.add("raveParty");
+  document.getElementById("doggo").classList.add("raveParty");
+  document.getElementById("heado").classList.add("raveParty");
+  document.getElementById("navo").classList.add("raveParty");
+  document.getElementById("bodyo").classList.add("raveParty");
+
+  window.scrollBy(0, 500);
+
+  setTimeout(() => {
+    endRaveParty();
+  }, 8000);
+}
+
+function endRaveParty(){
+  document.getElementById("soundo").classList.remove("raveParty");
+  document.getElementById("quoto").classList.remove("raveParty");
+  document.getElementById("giffo").classList.remove("raveParty");
+  document.getElementById("doggo").classList.remove("raveParty");
+  document.getElementById("heado").classList.remove("raveParty");
+  document.getElementById("navo").classList.remove("raveParty");
+  document.getElementById("bodyo").classList.remove("raveParty");
+}
+
 function startNewMusic(){
-    document.getElementById("newMusic").classList.remove("hidden")
-    document.getElementById("soundo").classList.add("raveParty")
+    document.getElementById("newMusic").classList.remove("hidden");
+    document.getElementById("soundo").classList.add("raveParty");
     window.scrollBy(0, 500);
 
     setTimeout(() => {
@@ -28,8 +55,8 @@ function startNewMusic(){
 }
 
 function endNewMusic(){
-  document.getElementById("newMusic").classList.add("hidden")
-  document.getElementById("soundo").classList.remove("raveParty")
+  document.getElementById("newMusic").classList.add("hidden");
+  document.getElementById("soundo").classList.remove("raveParty");
 }
 
 
